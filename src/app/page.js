@@ -1,6 +1,21 @@
+"use client";
+
 import Head from "next/head";
+import { doLogin } from "@/services/Web3Service";
+import { useState } from "react";
+import Footer from "../components/Footer";
 
 export default function Home() {
+
+  const [message, setMessage] = useState("");
+
+  function btnLoginClick() {
+    setMessage("Connecting to Metamask...");
+    doLogin()
+      .then(wallet => setMessage(wallet))
+      .catch(err => setMessage.error(err))
+  }
+
   return (
     <>
       <Head>
@@ -19,13 +34,15 @@ export default function Home() {
             <p className="lead">Your <u><i>decentralized</i></u> Social Network.</p>
             <p className="lead mb-4">Join with your wallet and let the world know how you're feeling!</p>
             <div className="d-grid gap-2 d-md-flex justify-content-md-start ">
-              <button type="button" className="btn btn-primary btn-lg px-4 me-md-2">
+              <button type="button" className="btn btn-primary btn-lg px-4 me-md-2" onClick={btnLoginClick}>
                 <img src="/metamask.png" width="64" className="me-3"/>
                 Connect with Metamask
               </button>
             </div>
+            <p className="message">{message}</p>
           </div>
         </div>
+        <Footer />
       </div>
     
     </>
