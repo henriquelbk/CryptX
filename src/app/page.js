@@ -31,7 +31,7 @@ export default function Home() {
           </div>
           <div className="col-lg-6">
             <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-4">Crypt<i>X</i></h1>
-            <p className="lead">Your <u><i>decentralized</i></u> Social Network.</p>
+            <p className="lead">Your <u><i>decentralized</i></u> Social Network</p>
             <p className="lead mb-4">Join with your wallet and let the world know how you're feeling!</p>
             <div className="d-grid gap-2 d-md-flex justify-content-md-start ">
               <button type="button" className="btn btn-primary btn-lg px-4 me-md-2" onClick={btnLoginClick}>
