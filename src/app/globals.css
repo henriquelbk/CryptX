@@ -14,3 +14,27 @@
     color: gray;
     margin-top: 10px;
 }
+
+.layout {
+    display: grid;
+    margin: 0;
+    max-width: 800px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.top {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.left {
+    float: left;
+    margin-top: 17px;
+}
+
+.brand {
+    height: 74px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
