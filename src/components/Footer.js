@@ -9,13 +9,13 @@ export default function Footer(){
                     <a href="/" className="nav-link px-2 text-body-secondary">Home</a>
                 </li>
                 <li className="nav-item">
-                    <a href="/create" className="nav-link px-2 text-body-secondary">New Campaign</a>
+                    <a href="/create" className="nav-link px-2 text-body-secondary">X1</a>
                 </li>
                 <li className="nav-item">
-                    <a href="/donate" className="nav-link px-2 text-body-secondary">Donate</a>
+                    <a href="/donate" className="nav-link px-2 text-body-secondary">X2</a>
                 </li>
                 <li className="nav-item">
-                    <a href="/about" className="nav-link px-2 text-body-secondary">About</a>
+                    <a href="/about" className="nav-link px-2 text-body-secondary">X3</a>
                 </li>
             </ul>
         </footer>
