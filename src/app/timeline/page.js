@@ -1,7 +1,7 @@
 "use client";
 
 import Head from "next/head";
-import NewTweet from "@/components/NewTweet";
+import NewPost from "@/components/NewPost";
 
 export default function Timeline() {
   return (
@@ -15,7 +15,7 @@ export default function Timeline() {
       <div className="container">
         <div className="row">
             <div className="layout">
-                <NewTweet />
+                <NewPost />
             </div>
         </div>
       </div>
