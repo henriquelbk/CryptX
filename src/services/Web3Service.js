@@ -39,3 +39,11 @@ export async function changeUsername(newName){
     const contract = getContract();
     return contract.methods.changeUsername(newName).send();
 }
+
+// Função de leitura do User
+
+export async function getLastPost(page){
+    const contract = getContract();
+    const post = await contract.methods.getLastPost(page).call();
+    return post.map(p => { return {...p}}).filter(p => p.text !== "");
+}
